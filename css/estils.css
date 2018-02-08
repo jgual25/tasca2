@@ -1,18 +1,27 @@
-.dins{
+.dins{/*estils dels inputs*/
     display: inline;
     justify-content: center;
     padding: 5px;
     font-size: 125%;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    color: chocolate;
 }
-.etiqueta{
+.etiqueta{/*estils dels labels*/
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    color: black;
 }
-.form{
-    display: block;
+.boto{/*estils dels botons*/
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: chocolate;
+    background-color: ghostwhite;
+    font-size: large;
+}
+.form{/*estils per al formulari*/
+  display: block;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
@@ -20,7 +29,6 @@
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   cursor: pointer;
@@ -28,18 +36,26 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-image: 'llibre.jpg';
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 8px;
+  border-color: darkred;
+  background-color: ghostwhite;
+  width: 50%;
+  
 }
-.taula{
+.fons{/*estils per al fons de la pàgina*/
+    background-image:url('llibre.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.taula{/*estils de la taula resultant*/
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     justify-content: center;
-    display: list-item;
-
-}
-fons{
-    background-image: 'llibre.jpg';
-    background-color: none;
+    display: block;
+    padding: 15px;
+    font-size: 120%;
+    color: darkred;
+    border-color: darkred;
+    background-color: ghostwhite;
 }

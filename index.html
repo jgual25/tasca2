@@ -9,13 +9,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/estils.css"/>
     <script src="js/funcio.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="http://fontawesome.io/icons/">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/minus-circle?style=solid">-->
 </head>
 <body class="fons">
-    <div>
-        <form method="get" onsubmit="return fila()" class="form">
+    <div align="center">
+        <form method="get" onsubmit="return fila()" class="form"><!--Estructura del formulari-->
             <div>
-                <h3>Actualitza la teva taula d'alumnes amb un sol clic</h3>
+                <h3>Actualitza la teva taula d'alumnes amb un formulari</h3>
             </div>
             <div>
                 <label for="dni" class="etiqueta">Número d'Identificació</label>
@@ -48,12 +51,17 @@
                <input type="number" id="nota" min="0" max="10" required class="dins">
             </div><br>
             <div>
-                <input type="submit" class="etiqueta" value="Insertar">
+                <span>
+                    <input type="submit" class="boto" value="Insertar"><!--botó que llança la funció per insertar una fila a la taula després d'haver omplit el formulari-->
+                </span>
+                <span>
+                    <input type="reset" class="boto" value="Reiniciar formulari">
+                </span>
             </div>
         </form>
     </div>
     <div>
-        <table id="alumnes" class="" style="width: 80%">
+        <table id="alumnes" class="taula" width="60%" align="center"><!--Capçalera de la taula que resultarà-->
             <tr>
                 <th>DNI</th>
                 <th>NOM</th>
@@ -61,7 +69,7 @@
                 <th>CORREU ELECTRÒNIC</th>
                 <th>QUALIFICACIÓ</th>
             </tr>
-    </div>
+    </div><br>
     
 </body>
 </html>
