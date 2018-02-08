@@ -13,23 +13,40 @@
         }
 }
 
+var nfila = 0;
+
 function fila(){
-    var novafila = $('<tr><td>'+$('#dni').val()+'</td>'+
+    var novafila = $('<tr id="'+nfila+'"><td>'+$('#dni').val()+'</td>'+
     '<td>'+$("#nom").val()+'</td>'+
     '<td>'+$("#cognom").val()+'</td>'+
     '<td>'+$("#correu").val()+'</td>'+
-    '<td>'+$("#nota").val()+'</td></tr>');
-    <button onclick="eliminar()">Eliminar</button>
+    '<td>'+$("#nota").val()+'</td>'+
+    '<td>'+("<input type='button' onclick=eliminar("+nfila+")><i class='fas fa-minus-circle'></i>")+'</td></tr>');
     novafila.appendTo('#alumnes');
+    nfila++;
     return false;
 }
-function eliminar(){
-    var supr = $('<tr><td>'+$('#dni').val()+'</td>'+
-    '<td>'+$("#nom").val()+'</td>'+
-    '<td>'+$("#cognom").val()+'</td>'+
-    '<td>'+$("#correu").val()+'</td>'+
-    '<td>'+$("#nota").val()+'</td></tr>');
-    supr.remove('#ncolumna');
-    return false;
+
+function eliminar(nfila){
+    $('#'+nfila).remove();
 }
+
+
+
+/*var novafila = $('<tr id="'+ nfila +'"><td>'+$('#dni').val()+'</td>'+
+'<td>'+$("#nom").val()+'</td>'+
+'<td>'+$("#cognom").val()+'</td>'+
+'<td>'+$("#correu").val()+'</td>'+
+'<td>'+$("#nota").val()+'</td>'+
+'<td>'+("<input type='button' onclick=eliminar("+nfila+") value='Borrar'>")+'</td></tr>');
+novafila.appendTo('#alumnes');
+nfila++;
+return false;
+}
+
+function eliminar(nfila){         
+$('#'+nfila).remove();
+}
+*/
+
 

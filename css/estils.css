@@ -1,0 +1,45 @@
+.dins{
+    display: inline;
+    justify-content: center;
+    padding: 5px;
+    font-size: 125%;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.etiqueta{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.form{
+    display: block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: 'llibre.jpg';
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.taula{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: center;
+    display: list-item;
+
+}
+fons{
+    background-image: 'llibre.jpg';
+    background-color: none;
+}
