@@ -1,5 +1,5 @@
 
- function dnivalid(){
+ function dnivalid(){//funció que comprova la identifiació.
       var sencer = $('#dni').val().toUpperCase();
        var chars = ['T','R','W','A','G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K','E'];
        var lletra = sencer.substr(-1);
@@ -12,13 +12,12 @@
         }
 }
 
-var nfila = 0;
-
-function fila(){
+var nfila = 0
+function fila(){//funció que inserta una fila per cada pic que es clica al botó, després d'haver rellentat correctament els camps del formulari
     if (dnivalid()==false){
         alert('La lletra de DNI no correspon al número escrit');
            return false;
-    }else{
+    }else{//en el cas de que la lletra sigui incorrecta, retorna fals i no ho inserta. en el cas de que el dni sigui correcte i la resta de camps estiguin completats, inserta una fila a la taula.
     var novafila = $('<tr id="'+nfila+'"><td>'+$('#dni').val()+'</td>'+
     '<td>'+$("#nom").val()+'</td>'+
     '<td>'+$("#cognom").val()+'</td>'+
@@ -30,10 +29,8 @@ function fila(){
     return false;
     }
 }
-/*<input type='button' onclick=eliminar("+nfila+") value='Esborrar'>
-<button type="button" class="btn btn-warning">Warning</button>*/
-function eliminar(nfila){
+
+function eliminar(nfila){//funcio que per a una fila insertada a la taula, permet esborrar-la per mitjà d'un botó.
     $('#'+nfila).remove();
 }
-
 
